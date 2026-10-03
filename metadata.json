@@ -1,0 +1,6 @@
+{
+  "name": "WaWa | Luxury Restaurant & Table Reservations",
+  "description": "Experience WaWa — Exceptional fine dining, private events, and table reservations crafted around unforgettable hospitality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
