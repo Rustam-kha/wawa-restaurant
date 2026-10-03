@@ -158,9 +158,9 @@ export const ManageBookingPage: React.FC = () => {
             </div>
 
             {/* Details Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 bg-[#0c0d0e] p-6 rounded-xl border border-[#282c30] text-xs">
-              <div className="space-y-1">
-                <span className="text-[#eae3d8]/50 uppercase font-mono text-[10px] block">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 bg-[#0c0d0e] p-6 rounded-xl border border-[#282c30] text-xs shadow-inner">
+              <div className="space-y-1 p-3 rounded-lg bg-[#141618]/60 border border-[#282c30]/50">
+                <span className="text-[#eae3d8]/50 uppercase font-mono text-[10px] tracking-wider block">
                   Location
                 </span>
                 <span className="font-serif text-sm text-[#f4efe8] block">
@@ -168,8 +168,8 @@ export const ManageBookingPage: React.FC = () => {
                 </span>
               </div>
 
-              <div className="space-y-1">
-                <span className="text-[#eae3d8]/50 uppercase font-mono text-[10px] block">
+              <div className="space-y-1 p-3 rounded-lg bg-[#141618]/60 border border-[#282c30]/50">
+                <span className="text-[#eae3d8]/50 uppercase font-mono text-[10px] tracking-wider block">
                   Date & Time
                 </span>
                 <span className="font-serif text-sm text-[#f4efe8] block">
@@ -177,8 +177,8 @@ export const ManageBookingPage: React.FC = () => {
                 </span>
               </div>
 
-              <div className="space-y-1">
-                <span className="text-[#eae3d8]/50 uppercase font-mono text-[10px] block">
+              <div className="space-y-1 p-3 rounded-lg bg-[#141618]/60 border border-[#282c30]/50">
+                <span className="text-[#eae3d8]/50 uppercase font-mono text-[10px] tracking-wider block">
                   Party & Seating
                 </span>
                 <span className="font-serif text-sm text-[#f4efe8] block">
@@ -186,8 +186,8 @@ export const ManageBookingPage: React.FC = () => {
                 </span>
               </div>
 
-              <div className="space-y-1">
-                <span className="text-[#eae3d8]/50 uppercase font-mono text-[10px] block">
+              <div className="space-y-1 p-3 rounded-lg bg-[#141618]/60 border border-[#282c30]/50">
+                <span className="text-[#eae3d8]/50 uppercase font-mono text-[10px] tracking-wider block">
                   Guest Name
                 </span>
                 <span className="font-medium text-[#f4efe8] block">
@@ -195,8 +195,8 @@ export const ManageBookingPage: React.FC = () => {
                 </span>
               </div>
 
-              <div className="space-y-1">
-                <span className="text-[#eae3d8]/50 uppercase font-mono text-[10px] block">
+              <div className="space-y-1 p-3 rounded-lg bg-[#141618]/60 border border-[#282c30]/50">
+                <span className="text-[#eae3d8]/50 uppercase font-mono text-[10px] tracking-wider block">
                   Occasion
                 </span>
                 <span className="font-medium text-[#f4efe8] block">
@@ -204,21 +204,21 @@ export const ManageBookingPage: React.FC = () => {
                 </span>
               </div>
 
-              <div className="space-y-1">
-                <span className="text-[#eae3d8]/50 uppercase font-mono text-[10px] block">
-                  Contact
+              <div className="space-y-1 p-3 rounded-lg bg-[#141618]/60 border border-[#282c30]/50">
+                <span className="text-[#eae3d8]/50 uppercase font-mono text-[10px] tracking-wider block">
+                  Contact Details
                 </span>
                 <span className="text-[#eae3d8] block">{activeReservation.guestEmail}</span>
-                <span className="text-[#eae3d8]/70 block font-mono">{activeReservation.guestPhone}</span>
+                <span className="text-[#eae3d8]/70 block font-mono text-[11px]">{activeReservation.guestPhone}</span>
               </div>
             </div>
 
             {activeReservation.specialRequests && (
               <div className="p-4 bg-[#0c0d0e] border border-[#282c30] rounded-xl text-xs">
-                <span className="text-[#c5a059] font-mono text-[10px] uppercase block mb-1">
+                <span className="text-[#c5a059] font-mono text-[10px] uppercase tracking-wider block mb-1">
                   Special Requests & Notes:
                 </span>
-                <p className="text-[#eae3d8]/80 italic">
+                <p className="text-[#eae3d8]/85 italic">
                   “{activeReservation.specialRequests}”
                 </p>
               </div>
